@@ -10,7 +10,6 @@ A comprehensive [blink.cmp](https://github.com/Saghen/blink.cmp) completion sour
 - 🎯 **Context Aware**: Only activates in git commit messages (`gitcommit` filetype)
 - 🎯 **Auto-detection**: Automatically detects project scopes from directory structure
 - 🎯 **Customizable**: Configure prefixes, scopes, and behavior to match your workflow
-- 🎯 **Fast**: Minimal overhead with smart caching
 
 ## Installation
 
@@ -20,7 +19,6 @@ A comprehensive [blink.cmp](https://github.com/Saghen/blink.cmp) completion sour
 {
   'your-username/blink-git-commit.nvim',
   dependencies = { 'saghen/blink.cmp' },
-  ft = 'gitcommit',
   opts = {}
 }
 ```
@@ -31,7 +29,6 @@ A comprehensive [blink.cmp](https://github.com/Saghen/blink.cmp) completion sour
 use {
   'your-username/blink-git-commit.nvim',
   requires = { 'saghen/blink.cmp' },
-  ft = 'gitcommit'
 }
 ```
 
