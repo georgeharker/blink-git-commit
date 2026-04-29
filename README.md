@@ -1,4 +1,4 @@
-# blink-git-commit.nvim
+# blink-cmp-git-commit.nvim
 
 A comprehensive [blink.cmp](https://github.com/Saghen/blink.cmp) completion source for git commit messages, providing intelligent suggestions for conventional commit formats.
 
@@ -17,7 +17,7 @@ A comprehensive [blink.cmp](https://github.com/Saghen/blink.cmp) completion sour
 
 ```lua
 {
-  'your-username/blink-git-commit.nvim',
+  'your-username/blink-cmp-git-commit.nvim',
   dependencies = { 'saghen/blink.cmp' },
   opts = {}
 }
@@ -27,7 +27,7 @@ A comprehensive [blink.cmp](https://github.com/Saghen/blink.cmp) completion sour
 
 ```lua
 use {
-  'your-username/blink-git-commit.nvim',
+  'your-username/blink-cmp-git-commit.nvim',
   requires = { 'saghen/blink.cmp' },
 }
 ```
@@ -43,7 +43,7 @@ require('blink.cmp').setup({
     providers = {
       ['git-commit'] = {
         name = 'git-commit',
-        module = 'blink-git-commit',
+        module = 'blink-cmp-git-commit',
         opts = {
           -- Configuration options (see below)
         }
@@ -61,7 +61,7 @@ require('blink.cmp').setup({
     providers = {
       ['git-commit'] = {
         name = 'git-commit',
-        module = 'blink-git-commit',
+        module = 'blink-cmp-git-commit',
         opts = {
           -- Commit type prefixes with configurable descriptions
           -- Each prefix is defined with both the prefix text and its description

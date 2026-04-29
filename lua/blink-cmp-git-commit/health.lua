@@ -3,7 +3,7 @@ local M = {}
 local health = vim.health or require("health")
 
 function M.check()
-	health.start("blink-git-commit.nvim")
+	health.start("blink-cmp-git-commit.nvim")
 
 	-- Check if blink.cmp is available
 	local has_blink_cmp, _blink_cmp = pcall(require, "blink.cmp")
@@ -17,21 +17,21 @@ function M.check()
 	end
 
 	-- Check if we can create the source
-	local has_source, source = pcall(require, "blink-git-commit")
+	local has_source, source = pcall(require, "blink-cmp-git-commit")
 	if has_source then
-		health.ok("blink-git-commit source can be loaded")
+		health.ok("blink-cmp-git-commit source can be loaded")
 
 		-- Try to create an instance
 		local ok, instance = pcall(source.new, {})
 		if ok then
-			health.ok("blink-git-commit source can be instantiated")
+			health.ok("blink-cmp-git-commit source can be instantiated")
 		else
-			health.error("Failed to create blink-git-commit instance", {
+			health.error("Failed to create blink-cmp-git-commit instance", {
 				"Error: " .. tostring(instance)
 			})
 		end
 	else
-		health.error("Failed to load blink-git-commit source", {
+		health.error("Failed to load blink-cmp-git-commit source", {
 			"Error: " .. tostring(source)
 		})
 	end

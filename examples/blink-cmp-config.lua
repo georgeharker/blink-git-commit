@@ -22,7 +22,7 @@ require('blink.cmp').setup({
 			-- Git commit completion source
 			['git-commit'] = {
 				name = 'git-commit',
-				module = 'blink-git-commit',
+				module = 'blink-cmp-git-commit',
 				opts = {
 					-- Customize commit prefixes
 					prefixes = {

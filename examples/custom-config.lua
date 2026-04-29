@@ -7,7 +7,7 @@ require('blink.cmp').setup({
     providers = {
       ['git-commit'] = {
         name = 'git-commit',
-        module = 'blink-git-commit',
+        module = 'blink-cmp-git-commit',
         opts = {
           -- Custom prefixes with your own descriptions
           prefixes = {

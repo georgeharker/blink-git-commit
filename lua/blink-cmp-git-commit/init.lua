@@ -1,4 +1,4 @@
---- @class blink-git-commit.Options
+--- @class blink-cmp-git-commit.Options
 --- @field prefixes? table[]
 --- @field scopes? string[]
 --- @field auto_detect_scopes? boolean
@@ -10,7 +10,7 @@
 --- @field kind_icons? table<string, string> Default icons per kind name; injected into appearance.kind_icons only for keys not already set
 
 --- @class GitCommitSource
---- @field opts blink-git-commit.Options
+--- @field opts blink-cmp-git-commit.Options
 --- @field type_items table[]
 --- @field scope_items table[]
 --- @field close_items table[]
@@ -117,7 +117,7 @@ end
 
 local M = {}
 
---- @param opts? blink-git-commit.Options
+--- @param opts? blink-cmp-git-commit.Options
 --- @return GitCommitSource
 function M.new(opts)
 	vim.validate { opts = { opts, "table", true } }

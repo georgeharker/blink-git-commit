@@ -17,7 +17,7 @@ stds.nvim = {
 std = "lua51+nvim"
 
 exclude_files = {
-	"lua/blink-git-commit/health.lua",
+	"lua/blink-cmp-git-commit/health.lua",
 }
 
 ignore = {
